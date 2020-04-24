@@ -24,7 +24,7 @@ class Search extends Component {
     // Get recipes from API
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${this.state.recipeSearch}&from=0&to=12&app_id=06c860b8&app_key=289077bf36e8a272a42c54dc680f0a41`
+        `https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q=${this.state.recipeSearch}&from=0&to=12&app_id=06c860b8&app_key=790a6ebec5e5553caaf00faaac295c2a`
       )
       .then(res => {
         this.setState({ recipes: res.data.hits, recipeSearch: "", loader: "" });
